@@ -20,25 +20,39 @@
 
     <div class="input-bill">
       <label for="bill">Bill</label>
-      <img src="/images/icon-dollar.svg" alt="">
-      <input type="text">
+      <img src="/images/icon-dollar.svg" alt="dollar Icon">
+      <input type="text" id="select">
     </div>
     <div class="select-tip">
 
-      <label for="">Select Tip %</label>
+      <label for="select-tip">Select Tip %</label>
       <div class="tip-btn">
         <button class="btn">5%</button>
         <button class="btn">10%</button>
-        <button class="btn">15%</button>
+        <button class="btn" id="fifteen">15%</button>
         <button class="btn">25%</button>
         <button class="btn">50%</button>
-        <button class="btn">custom</button>
+        <button class="btn" id="custom">Custom</button>
       </div>
     </div>
     <div class="number">
       <label for="number-of-people">Number of People</label>
-      <input type="number" name="" id="">
+      <img src="/images/icon-person.svg" alt="Person Icon">
+      <input type="number" id="people">
+    </div>
+    <div class="tip-footer">
+      <div class="tip-amount">
+        <p>Tip Amount<br><strong>/person</strong></p>
+        <h1>$4.27</h1>
+      </div>
+      <div class="tip-total">
+        <p>Total<br><strong>/person</strong></p>
+        <h1>$32.79</h1>
 
+      </div>
+
+
+      <button>RESET</button>
     </div>
 
   </div>

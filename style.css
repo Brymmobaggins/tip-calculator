@@ -7,17 +7,19 @@
 }
 
 :root {
+    ---Strong-cyan: hsl(172, 67%, 45%);
     --Very-dark-cyan: hsl(183, 100%, 15%);
     --Dark-grayish-cyan: hsl(186, 14%, 43%);
     --Grayish-cyan: hsl(184, 14%, 56%);
     --Light-grayish-cyan: hsl(185, 41%, 84%);
-    --Very-ight-grayish-cyan: hsl(189, 41%, 97%);
-    --White: hsl(0, 0%, 100%)
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --font-family: 'Space Mono', monospace;
 }
 
 body {
     background-color: var(--Light-grayish-cyan);
-    font-family: 'Space Mono', monospace;
+    font-family: var(--font-family);
     font-size: 700;
 }
 
@@ -32,20 +34,39 @@ body {
 .card {
     background-color: var(--White);
     height: 700px;
-    /* width: 100%; */
     border-radius: 25px 25px 0px 0px;
     padding: 1.5em;
-    /* position: relative; */
-}
-
-label {
-    display: inline-block;
 }
 
 input {
     width: 100%;
-    padding: 10px 15px;
+    padding: 10px 13px;
     font-size: 25px;
+    border: 0;
+    background-color: var(--Light-grayish-cyan);
+    outline: 0;
+    border-radius: 6px;
+    /* border: 0; */
+    /* background-color:hwb(167 69% 22%); */
+}
+
+#select,
+#people {
+    text-align: right;
+}
+
+label[for="select-tip"],
+label[for="number-of-people"] {
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.input-bill img {
+    position: relative;
+    top: 45px;
+    left: -35px;
+    height: 25px;
+    /* text-align: right; */
 }
 
 .tip-btn {
@@ -55,18 +76,63 @@ input {
 }
 
 .btn {
-    /* padding: 5px; */
     font-family: 'Space Mono', monospace;
-    font-size: 24px;
+    font-size: 25px;
+    background-color: var(--Very-dark-cyan);
     border-radius: 5px;
+    color: var(--White);
     border: 0;
+    opacity: 0.9;
 }
 
+#fifteen {
+    background-color: var(---Strong-cyan);
+    color: var(--Dark-grayish-cyan);
+}
 
+#custom {
+    background-color: var(--Light-grayish-cyan);
+    color: var(--Dark-grayish-cyan);
+}
 
+.tip-footer {
+    background-color: var(--Very-dark-cyan);
+    color: var(--Light-grayish-cyan);
+    margin-top: 3em;
+    border-radius: 10px;
+    padding: 1.5em 1em;
+    /* height: 200px; */
+}
 
+.tip-amount,
+.tip-total {
+    display: flex;
+    justify-content: space-between;
+}
 
+strong {
+    color: var(--Dark-grayish-cyan);
+}
 
+h1 {
+    color: var(---Strong-cyan);
+}
+
+.tip-footer button {
+    width: 100%;
+    font-family: var(--font-family);
+    background-color: var(---Strong-cyan);
+    font-size: 24px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 5px;
+
+}
+button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+    
+}
 
 .attribution {
     font-size: 11px;
