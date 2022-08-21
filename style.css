@@ -7,7 +7,7 @@
 }
 
 :root {
-    ---Strong-cyan: hsl(172, 67%, 45%);
+    --Strong-cyan: hsl(172, 67%, 45%);
     --Very-dark-cyan: hsl(183, 100%, 15%);
     --Dark-grayish-cyan: hsl(186, 14%, 43%);
     --Grayish-cyan: hsl(184, 14%, 56%);
@@ -23,7 +23,7 @@ body {
     font-size: 700;
 }
 
-.logo {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,6 +36,7 @@ body {
     height: 700px;
     border-radius: 25px 25px 0px 0px;
     padding: 1.5em;
+    /* position: relative; */
 }
 
 input {
@@ -86,13 +87,26 @@ label[for="number-of-people"] {
 }
 
 #fifteen {
-    background-color: var(---Strong-cyan);
+    background-color: var(--Strong-cyan);
     color: var(--Dark-grayish-cyan);
 }
 
 #custom {
     background-color: var(--Light-grayish-cyan);
     color: var(--Dark-grayish-cyan);
+    text-align: right;
+}
+
+.number {
+    position: relative;
+}
+
+.number img {
+    position: absolute;
+    top: 65px;
+    left: 13px;
+    height: 25px;
+    /* bottom: 0; */
 }
 
 .tip-footer {
@@ -108,30 +122,33 @@ label[for="number-of-people"] {
 .tip-total {
     display: flex;
     justify-content: space-between;
+    margin: 10px;
 }
+
 
 strong {
     color: var(--Dark-grayish-cyan);
 }
 
 h1 {
-    color: var(---Strong-cyan);
+    color: var(--Strong-cyan);
 }
 
 .tip-footer button {
     width: 100%;
     font-family: var(--font-family);
-    background-color: var(---Strong-cyan);
+    background-color: var(--Strong-cyan);
     font-size: 24px;
     margin-top: 10px;
     border: 0;
     border-radius: 5px;
 
 }
-button:hover{
+
+button:hover {
     opacity: 0.6;
     cursor: pointer;
-    
+
 }
 
 .attribution {

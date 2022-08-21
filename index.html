@@ -10,56 +10,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<dv>
-
-  <div class="logo">
+<body>
+  <header>
     <img src="/images/logo.svg" alt="logo">
-  </div>
-  <div class="card">
-
-
-    <div class="input-bill">
-      <label for="bill">Bill</label>
-      <img src="/images/icon-dollar.svg" alt="dollar Icon">
-      <input type="text" id="select">
-    </div>
-    <div class="select-tip">
-
-      <label for="select-tip">Select Tip %</label>
-      <div class="tip-btn">
-        <button class="btn">5%</button>
-        <button class="btn">10%</button>
-        <button class="btn" id="fifteen">15%</button>
-        <button class="btn">25%</button>
-        <button class="btn">50%</button>
-        <button class="btn" id="custom">Custom</button>
-      </div>
-    </div>
-    <div class="number">
-      <label for="number-of-people">Number of People</label>
-      <img src="/images/icon-person.svg" alt="Person Icon">
-      <input type="number" id="people">
-    </div>
-    <div class="tip-footer">
-      <div class="tip-amount">
-        <p>Tip Amount<br><strong>/person</strong></p>
-        <h1>$4.27</h1>
-      </div>
-      <div class="tip-total">
-        <p>Total<br><strong>/person</strong></p>
-        <h1>$32.79</h1>
-
+  </header>
+  <main>
+    <div class="card">
+      <div class="input-bill">
+        <label for="bill">Bill</label>
+        <img src="/images/icon-dollar.svg" alt="dollar Icon">
+        <input type="text" id="select" placeholder="0" min="0">
       </div>
 
+      <div class="select-tip">
+        <label for="select-tip">Select Tip %</label>
+        <div class="tip-btn">
+          <button class="btn">5%</button>
+          <button class="btn">10%</button>
+          <button class="btn" id="fifteen">15%</button>
+          <button class="btn">25</button>
+          <button class="btn">50%</button>
+          <input class="btn" id="custom" placeholder="CUSTOM">
+        </div>
+      </div>
 
-      <button>RESET</button>
+      <div class="number">
+        <label for="number-of-people">Number of People</label>
+        <img src="/images/icon-person.svg" alt="Person Icon">
+        <input type="number" id="people">
+        <span></span>
+      </div>
+
+      <div class="tip-footer">
+        <div class="tip-amount">
+          <p>Tip Amount<br><strong>/person</strong></p>
+          <h1>$<b id="fiqure">4.27</b></h1>
+        </div>
+        <div class="tip-total">
+          <p>Total<br><strong>/person</strong></p>
+          <h1>$<b id="fiqure">32.79</b></h1>
+        </div>
+        <button id="reset">RESET</button>
+      </div>
+
     </div>
 
-  </div>
+  </main>
   <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-  </body>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  <script src="main.js"></script>
+</body>
 
 </html>
