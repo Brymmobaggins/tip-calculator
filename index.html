@@ -28,27 +28,27 @@
           <button class="btn">5%</button>
           <button class="btn">10%</button>
           <button class="btn" id="fifteen">15%</button>
-          <button class="btn">25</button>
+          <button class="btn">25%</button>
           <button class="btn">50%</button>
-          <input class="btn" id="custom" placeholder="CUSTOM">
+          <input class="btn" type="number" id="custom" placeholder="CUSTOM" ">
         </div>
       </div>
 
       <div class="number">
         <label for="number-of-people">Number of People</label>
         <img src="/images/icon-person.svg" alt="Person Icon">
-        <input type="number" id="people">
-        <span></span>
+        <span id="error"></span>
+        <input type="number" id="people" autocomplete="off">
       </div>
 
       <div class="tip-footer">
         <div class="tip-amount">
           <p>Tip Amount<br><strong>/person</strong></p>
-          <h1>$<b id="fiqure">4.27</b></h1>
+          <h1>$<b id="amount">4.27</b></h1>
         </div>
         <div class="tip-total">
           <p>Total<br><strong>/person</strong></p>
-          <h1>$<b id="fiqure">32.79</b></h1>
+          <h1>$<b id="total">32.79</b></h1>
         </div>
         <button id="reset">RESET</button>
       </div>
